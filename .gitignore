@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Editors
+.idea/*
+.idea/inspectionProfiles/Project_Default.xml
+.idea/modules.xml
+.idea/shoe-tracker-app.iml
+.idea/vcs.xml
