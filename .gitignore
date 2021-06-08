@@ -29,3 +29,4 @@ yarn-error.log*
 .idea/shoe-tracker-app.iml
 .idea/vcs.xml
 .vscode
+src/setupTests.js

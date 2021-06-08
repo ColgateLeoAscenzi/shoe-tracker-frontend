@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "typescript": "^4.3.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -17,11 +23,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:raw": "eslint '{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx}'",
-    "lint": "yarn run -s lint:raw || true",
+    "lint": "yarn run lint:raw || true",
     "pretty": "prettier --write '{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,json,md,yml,html}'",
-    "fixcode": "yarn run -s lint:raw --fix; yarn run -s pretty && yarn run -s lint"
+    "fixcode": "yarn run lint:raw --fix; yarn run pretty && yarn run lint"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
