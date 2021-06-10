@@ -37,7 +37,8 @@
         "lint:raw": "eslint \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx}\"",
         "lint": "yarn run lint:raw || true",
         "pretty": "prettier --write \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,json,md,yml,html}\"",
-        "fixcode": "yarn run lint:raw --fix && yarn run pretty && yarn run lint"
+        "fixcode": "yarn run lint:raw --fix && yarn run pretty && yarn run lint",
+        "prepare": "husky install"
     },
     "prettier": "@carimus/prettier-config",
     "eslintConfig": {
