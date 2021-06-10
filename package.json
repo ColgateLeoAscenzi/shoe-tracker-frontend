@@ -34,9 +34,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "lint:raw": "eslint \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx}\"",
+        "lint:raw": "eslint \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,tsx}\"",
         "lint": "yarn run lint:raw || true",
-        "pretty": "prettier --write \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,json,md,yml,html}\"",
+        "pretty": "prettier --write \"{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,tsx,json,md,yml,html}\"",
         "fixcode": "yarn run lint:raw --fix && yarn run pretty && yarn run lint",
         "prepare": "husky install"
     },
@@ -50,7 +50,7 @@
         }
     },
     "lint-staged": {
-        "{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx}": [
+        "{*,{src,public,docs,.storybook}/**/*,__{tests,mocks}__/**/*}.{js,jsx,tsx}": [
             "prettier --write",
             "eslint"
         ],
