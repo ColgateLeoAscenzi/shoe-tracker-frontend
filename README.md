@@ -1,3 +1,6 @@
+# Badges
+[![DeepScan grade](https://deepscan.io/api/teams/13406/projects/17529/branches/405042/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=13406&pid=17529&bid=405042)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
